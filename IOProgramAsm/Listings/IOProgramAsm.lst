@@ -1,0 +1,174 @@
+A51 MACRO ASSEMBLER  IOPROGRAMASM                                                         10/08/2020 01:45:48 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\IOProgramAsm.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE IOProgramAsm.a51 SET(SMALL) DEBUG PRINT(.\Listings\IOProgramAsm.lst) OB
+                      JECT(.\Objects\IOProgramAsm.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+----                   1     cseg at 0
+                       2             
+                       3             
+                       4             
+                       5             
+                       6             
+                       7             
+0000 E590              8             mov a, P1
+0002 54F0              9             anl a, #0f0h
+0004 C4               10             swap a
+0005 540F             11             anl a, #0fh
+0007 75F00A           12             mov b, #0ah
+000A A4               13             mul ab
+000B F5F0             14             mov b, a
+000D E590             15             mov a, P1
+000F 540F             16             anl a, #0fh
+0011 7C00             17             mov R4, #00h
+0013 25F0             18             add a, b    
+0015 F5F0             19             mov b, a
+0017 E5F0             20             mov a, b
+0019                  21             mov y + 01h, #00h
+*** _____________________________________^
+*** ERROR #A45 IN 21 (IOProgramAsm.a51, LINE 21): UNDEFINED SYMBOL (PASS-2)
+001C                  22             mov y, a
+*** _____________________________________^
+*** ERROR #A45 IN 22 (IOProgramAsm.a51, LINE 22): UNDEFINED SYMBOL (PASS-2)
+                      23             
+001E FE               24             mov R6, a
+001F                  25             mov b, y + 01h
+*** ________________________________________^
+*** ERROR #A45 IN 25 (IOProgramAsm.a51, LINE 25): UNDEFINED SYMBOL (PASS-2)
+0022 7D64             26             mov R5, #064h
+0024                  27             lcall ?C?SIDIV
+*** _______________________________________^
+*** ERROR #A45 IN 27 (IOProgramAsm.a51, LINE 27): UNDEFINED SYMBOL (PASS-2)
+0027 D3               28             SETB    C
+0028 ED               29             MOV     A,R5
+0029 9432             30             SUBB    A,#032H
+002B EC               31             MOV     A,R4
+002C 6480             32             XRL     A,#080H
+002E 9480             33             SUBB    A,#080H
+0030                  34             MOV     R6,y
+*** ____________________________________________^
+*** ERROR #A45 IN 34 (IOProgramAsm.a51, LINE 34): UNDEFINED SYMBOL (PASS-2)
+0032                  35             MOV     R7,y+01H
+*** ____________________________________________^
+*** ERROR #A45 IN 35 (IOProgramAsm.a51, LINE 35): UNDEFINED SYMBOL (PASS-2)
+0034 7C00             36             MOV     R4,#00H
+0036 7D64             37             MOV     R5,#064H
+0038 400C             38             JC      ?C0003
+003A                  39             LCALL   ?C?SIDIV
+*** _________________________________________^
+*** ERROR #A45 IN 39 (IOProgramAsm.a51, LINE 39): UNDEFINED SYMBOL (PASS-2)
+003D EF               40             MOV     A,R7
+003E 2401             41             ADD     A,#01H
+0040 FF               42             MOV     R7,A
+0041 E4               43             CLR     A
+A51 MACRO ASSEMBLER  IOPROGRAMASM                                                         10/08/2020 01:45:48 PAGE     2
+
+0042 3E               44             ADDC    A,R6
+0043 FE               45             MOV     R6,A
+0044 8003             46             SJMP    ?C0004
+0046                  47             ?C0003:
+0046                  48             LCALL   ?C?SIDIV
+*** _________________________________________^
+*** ERROR #A45 IN 48 (IOProgramAsm.a51, LINE 48): UNDEFINED SYMBOL (PASS-2)
+0049                  49             ?C0004:
+0049                  50             MOV     y,R6
+*** _________________________________________^
+*** ERROR #A45 IN 50 (IOProgramAsm.a51, LINE 50): UNDEFINED SYMBOL (PASS-2)
+004B                  51             MOV     y+01H,R7
+*** _________________________________________^
+*** ERROR #A45 IN 51 (IOProgramAsm.a51, LINE 51): UNDEFINED SYMBOL (PASS-2)
+                      52                                                
+004D                  53             MOV     P2,y+01H
+*** ____________________________________________^
+*** ERROR #A45 IN 53 (IOProgramAsm.a51, LINE 53): UNDEFINED SYMBOL (PASS-2)
+                      54                                                
+0050                  55             MOV     R6,y
+*** ____________________________________________^
+*** ERROR #A45 IN 55 (IOProgramAsm.a51, LINE 55): UNDEFINED SYMBOL (PASS-2)
+0052                  56             MOV     R7,y+01H
+*** ____________________________________________^
+*** ERROR #A45 IN 56 (IOProgramAsm.a51, LINE 56): UNDEFINED SYMBOL (PASS-2)
+0054 7C00             57             MOV     R4,#00H
+0056 7D0A             58             MOV     R5,#0AH
+0058                  59             LCALL   ?C?IMUL
+*** _________________________________________^
+*** ERROR #A45 IN 59 (IOProgramAsm.a51, LINE 59): UNDEFINED SYMBOL (PASS-2)
+005B                  60             MOV     y,R6
+*** _________________________________________^
+*** ERROR #A45 IN 60 (IOProgramAsm.a51, LINE 60): UNDEFINED SYMBOL (PASS-2)
+005D                  61             MOV     y+01H,R7
+*** _________________________________________^
+*** ERROR #A45 IN 61 (IOProgramAsm.a51, LINE 61): UNDEFINED SYMBOL (PASS-2)
+                      62                                               
+005F                  63             MOV     A,y
+*** ___________________________________________^
+*** ERROR #A45 IN 63 (IOProgramAsm.a51, LINE 63): UNDEFINED SYMBOL (PASS-2)
+0061 540F             64             ANL     A,#0FH
+0063 FE               65             MOV     R6,A
+0064 E4               66             CLR     A
+0065 7804             67             MOV     R0,#04H
+0067                  68             ?C0006:
+0067 CE               69             XCH     A,R6
+0068 A2E7             70             MOV     C,ACC.7
+006A 13               71             RRC     A
+006B CE               72             XCH     A,R6
+006C 13               73             RRC     A
+006D D8F8             74             DJNZ    R0,?C0006
+006F F5B0             75             MOV     P3,A
+                      76                                               
+0071 7E00             77             MOV     R6,#00H
+0073                  78             MOV     R7,y+01H
+*** ____________________________________________^
+*** ERROR #A45 IN 78 (IOProgramAsm.a51, LINE 78): UNDEFINED SYMBOL (PASS-2)
+0075 7C00             79             MOV     R4,#00H
+0077 7D0A             80             MOV     R5,#0AH
+0079                  81             LCALL   ?C?IMUL
+*** _________________________________________^
+*** ERROR #A45 IN 81 (IOProgramAsm.a51, LINE 81): UNDEFINED SYMBOL (PASS-2)
+007C EE               82             MOV     A,R6
+007D 540F             83             ANL     A,#0FH
+007F FF               84             MOV     R7,A
+0080 EF               85             MOV     A,R7
+A51 MACRO ASSEMBLER  IOPROGRAMASM                                                         10/08/2020 01:45:48 PAGE     3
+
+0081 25B0             86             ADD     A,P3
+0083 F5B0             87             MOV     P3,A
+                      88                                                
+0085                  89             LJMP    ?C0001
+*** _________________________________________^
+*** ERROR #A45 IN 89 (IOProgramAsm.a51, LINE 89): UNDEFINED SYMBOL (PASS-2)
+                      90             
+                      91     end
+                                     
+                                     
+                                     
+A51 MACRO ASSEMBLER  IOPROGRAMASM                                                         10/08/2020 01:45:48 PAGE     4
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+?C0001 . . . . . .    ----   -----       
+?C0003 . . . . . .  C ADDR   0046H   A   
+?C0004 . . . . . .  C ADDR   0049H   A   
+?C0006 . . . . . .  C ADDR   0067H   A   
+?C?IMUL. . . . . .    ----   -----       
+?C?SIDIV . . . . .    ----   -----       
+ACC. . . . . . . .  D ADDR   00E0H   A   
+B. . . . . . . . .  D ADDR   00F0H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+Y. . . . . . . . .    ----   -----       
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 20 ERROR(S)

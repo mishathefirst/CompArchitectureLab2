@@ -1,0 +1,43 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/08/2020  04:16:16  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\IOController.obj TO .\Objects\IOASM PRINT (.\Listings\IOASM.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\IOController.obj (IOCONTROLLER)
+
+
+LINK MAP OF MODULE:  .\Objects\IOASM (IOCONTROLLER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0004H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\IOASM (IOCONTROLLER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        IOCONTROLLER
+  D:0090H         SYMBOL        P1
+  D:00A0H         SYMBOL        P2
+  C:0000H         LINE#         3
+  C:0002H         LINE#         4
+  -------         ENDMOD        IOCONTROLLER
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0004H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=4
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

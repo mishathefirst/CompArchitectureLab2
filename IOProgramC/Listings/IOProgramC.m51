@@ -1,0 +1,96 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/08/2020  04:21:12  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\IOProgramC.obj TO .\Objects\IOProgramC PRINT (.\Listings\IOProgramC.m51) RAMSIZE (
+>> 256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\IOProgramC.obj (IOPROGRAMC)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?IMUL)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?SIDIV)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  .\Objects\IOProgramC (IOPROGRAMC)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?IOPROGRAMC
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00A1H     INBLOCK      ?PR?MAIN?IOPROGRAMC
+            CODE    08A1H     009DH     UNIT         ?C?LIB_CODE
+            CODE    093EH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\IOProgramC (IOPROGRAMC)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?IOPROGRAMC
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\IOProgramC (IOPROGRAMC)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        IOPROGRAMC
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0800H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/08/2020  04:21:12  PAGE 2
+
+
+  D:0008H         PUBLIC        y
+  -------         PROC          MAIN
+  C:0800H         LINE#         4
+  C:0800H         LINE#         5
+  C:0800H         LINE#         6
+  C:0826H         LINE#         7
+  C:085DH         LINE#         8
+  C:0860H         LINE#         9
+  C:086EH         LINE#         10
+  C:0883H         LINE#         11
+  C:089EH         LINE#         12
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        IOPROGRAMC
+
+  -------         MODULE        ?C?IMUL
+  C:08A1H         PUBLIC        ?C?IMUL
+  -------         ENDMOD        ?C?IMUL
+
+  -------         MODULE        ?C?SIDIV
+  C:08B3H         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+  -------         MODULE        ?C?UIDIV
+  C:08E9H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00A1H BYTE ( 7%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=333
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

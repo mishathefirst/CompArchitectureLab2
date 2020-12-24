@@ -1,0 +1,3 @@
+".\Objects\IOController.obj" 
+TO ".\Objects\IOASM" 
+PRINT(".\Listings\IOASM.m51") RAMSIZE(256) 

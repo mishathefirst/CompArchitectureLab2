@@ -1,0 +1,3 @@
+".\Objects\IOProgramC.obj" 
+TO ".\Objects\IOProgramC" 
+PRINT(".\Listings\IOProgramC.m51") RAMSIZE(256) 
